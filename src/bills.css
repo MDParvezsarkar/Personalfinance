@@ -1,0 +1,19 @@
+.bills-list{padding:0 20px}
+.bill-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;align-items:center;gap:20px;padding:17px 0;border-bottom:1px solid #e7eaf0}
+.bill-row:last-child{border-bottom:0}
+.bill-main{display:flex;align-items:center;gap:12px;min-width:0}
+.bill-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:11px;background:#f0f3ff;color:#3156d8;flex:none}
+.bill-main>div:last-child{display:flex;flex-direction:column;gap:4px;min-width:0}
+.bill-main h3{margin:0;font-size:15px}
+.bill-main span,.bill-main small{color:#7b8495;font-size:12px}
+.bill-amount{white-space:nowrap}
+.bill-status{padding:5px 9px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.bill-status.upcoming{background:#eef2ff;color:#3156d8}
+.bill-status.overdue{background:#fff0ed;color:#c2412d}
+.bill-status.paid{background:#eaf8ef;color:#25824a}
+.bill-actions{display:flex;align-items:center;gap:7px}
+.bill-actions .primary,.bill-actions .secondary{display:inline-flex;align-items:center;gap:5px;padding:8px 10px}
+.bill-actions .danger-icon{width:34px;height:34px}
+.bill-actions button:disabled{cursor:not-allowed;opacity:.5}
+@media(max-width:760px){.bill-row{grid-template-columns:minmax(0,1fr) auto;gap:12px}.bill-status{grid-column:1;justify-self:start;margin-left:52px}.bill-actions{grid-column:2;grid-row:2;justify-self:end}}
+@media(max-width:480px){.bills-list{padding:0 14px}.bill-row{grid-template-columns:minmax(0,1fr) auto}.bill-actions{gap:4px}.bill-actions .primary,.bill-actions .secondary{padding:7px}.bill-actions .secondary{font-size:0}.bill-actions .secondary svg{width:16px}}

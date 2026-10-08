@@ -1,0 +1,6 @@
+.category-list{display:grid;gap:8px;margin-top:18px}
+.category-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #e7eaf0;border-radius:10px}
+.category-item>div{display:flex;align-items:center;gap:8px}
+.category-item input{min-width:0;flex:1}
+.budget-form{margin-top:18px}
+@media(max-width:600px){.category-item{align-items:flex-start;flex-direction:column}.category-item>div{flex-wrap:wrap}}

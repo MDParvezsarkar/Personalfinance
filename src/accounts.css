@@ -1,0 +1,44 @@
+.accounts-page{--account-border:#e8ecf3}
+.accounts-page .title{margin-bottom:22px}
+.accounts-page .title h1{font-size:30px;letter-spacing:-.7px}
+.accounts-page .title p{font-size:14px;line-height:1.5}
+.accounts-page .account-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:18px}
+.accounts-page .accounts-summary{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:18px}
+.accounts-page .accounts-summary .stat{min-height:86px;min-width:0}
+.accounts-page .accounts-summary .stat>div:last-child{min-width:0}
+.accounts-page .accounts-summary .stat strong{font-size:clamp(16px,1.5vw,20px);overflow-wrap:anywhere}
+.accounts-page .big-account{min-width:0;min-height:280px;display:flex;flex-direction:column;padding:20px 21px;box-shadow:0 2px 8px #17203306}
+.accounts-page .account-icon{width:40px;height:40px;margin:0 0 16px}
+.accounts-page .big-account>span{font-size:10px}
+.accounts-page .big-account h2{min-height:22px;margin:6px 32px 11px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.accounts-page .big-account>strong{font-size:25px;line-height:1.25;font-variant-numeric:tabular-nums}
+.accounts-page .account-flow{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:17px}
+.accounts-page .account-flow>div{min-width:0;min-height:59px;padding:9px 10px}
+.accounts-page .account-flow span{font-size:11px;white-space:nowrap}
+.accounts-page .account-flow b{font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.accounts-page .account-actions{margin-top:auto;padding-top:14px}
+.accounts-page .account-actions .secondary{min-width:0;height:38px;padding:0 9px;font-size:12px;white-space:nowrap}
+.accounts-page .account-actions .secondary svg{flex:none}
+.accounts-page .business-edit{background:#f6f7fa}
+.accounts-page .business-edit:hover{background:#edf2ff;color:#3156d8}
+.account-card{min-width:0;min-height:272px;display:flex;flex-direction:column;padding:19px 20px;border:1px solid #e6e9ef;border-radius:14px;background:#fff;box-shadow:0 2px 8px #17203306}
+.account-card-top{display:flex;align-items:center;gap:9px;min-height:36px}
+.account-type-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#f0f3fa;color:#3156d8;flex:none}
+.account-type-pill{border-radius:99px;padding:5px 9px;font-size:11px;font-weight:700;white-space:nowrap;background:#eef2ff;color:#3156d8}
+.account-type-pill.cash{background:#eaf8ef;color:#25824a}
+.account-edit{margin-left:auto;flex:none;background:#f6f7fa;color:#697386}
+.account-edit:hover{background:#edf2ff;color:#3156d8}
+.account-card h2{margin:17px 0 7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+.account-card-balance{font-size:25px;line-height:1.2;font-weight:750;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.account-card-caption{margin-top:5px;color:#8991a3;font-size:12px}
+.account-card-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+.account-card-flow>div{min-width:0;display:flex;flex-direction:column;gap:5px;padding:9px 10px;border:1px solid #e7eaf0;border-radius:9px}
+.account-card-flow span{color:#7b8495;font-size:11px;white-space:nowrap}
+.account-card-flow b{font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.account-card-footer{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:14px}
+.account-card-footer button{height:36px;min-width:0;flex:1;padding:0 9px;font-size:12px;white-space:nowrap}
+.account-card-footer button svg{flex:none}
+@media(max-width:1100px){.accounts-page .account-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.accounts-page .accounts-summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.accounts-page .accounts-summary .stat{padding:13px;gap:9px}.accounts-page .accounts-summary .stat-icon{width:34px;height:34px;flex:none}}
+@media(max-width:760px){.accounts-page .title h1{font-size:25px}.accounts-page .account-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.account-card{min-height:285px;padding:16px}.account-card-footer{flex-direction:column}.account-card-footer button{width:100%}}
+@media(max-width:520px){.accounts-page .account-grid{grid-template-columns:minmax(0,1fr)}.account-card{min-height:0;padding:19px}.account-card-footer{flex-direction:row}.account-card-footer button{flex:1}.account-card-flow{margin-top:14px}}
+@media(max-width:420px){.accounts-page .accounts-summary{grid-template-columns:minmax(0,1fr)}.accounts-page .accounts-summary .stat{min-height:74px}.accounts-page .accounts-summary .stat strong{font-size:18px}}
